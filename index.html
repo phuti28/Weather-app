@@ -19,106 +19,101 @@
     <div class="container">
 
         <div class="weather-app">
+            <div class="clearfix">
+                <form class="float-left" form id="search-form">
+                    <input type="text" placeholder="Type a city..." autofocus="on" autocomplete="of"
+                        id="search_form-location">
 
-            <form class="search-form" id="search-form">
-                <div class="row">
-                    <div class="col-6">
-                        <input type="search" placeholder="Type a city..." autofocus="on" autocomplete="of"
-                            id="city-input" class="form-control shadow-sm">
-                    </div>
-                    <div class="col-3">
-                        <input type="submit" value="search" class="form-control btn btn-primary shadow-sm w-100">
-                    </div>
-                    <div class="col-3">
-                        <button class="btn btn-success w-100" id="current-location-button">
-                            Current
-                        </button>
+                    <input type="submit" value="search" class="btn btn-primary shadow-sm w-100">
+                    <button id="weather-refresh" class="float-left" btn btn-success>
+                        Current location
+                    </button>
+            </div>
+        </div>
+        </form>
+        </br>
+        <h1 id="city">
+            Zeerust
+        </h1>
+        <h2>
+            <img src="images/partly cloudy.png" />
+            <ul>
+                <li id="date">
+                </li>
+                <li id="description">
+                    clear
+                </li>
+            </ul>
+        </h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="clearfix">
+                    <div class="float-left">
+                        <span class="temperature" id="temperature">
+                            20
+                        </span>
+                        <span class="units">
+                            °C
+                        </span>
+                        <div class="col-6">
+                            <ul>
+                                <li>
+                                    Humidity:
+                                    <span id="humidity">
+                                        25
+                                    </span>
+                                    %
+                                </li>
+                                <li>
+                                    Wind speed:
+                                    <span id="wind">
+                                        5
+                                    </span>
+                                    km/h
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </form>
-            </br>
-            <h1 id="city">
-                Zeerust
-            </h1>
-            <h2>
-                <img src="images/partly cloudy.png" />
-                <ul>
-                    <li id="date">
-                    </li>
-                    <li id="description">
-                        clear
-                    </li>
-                </ul>
-            </h2>
-            <div class="row">
                 <div class="col-6">
-                    <div class="clearfix">
-                        <div class="float-left">
-                            <span class="temperature" id="temperature">
-                                20
-                            </span>
-                            <span class="units">
-                                °C
-                            </span>
-                            <div class="col-6">
-                                <ul>
-                                    <li>
-                                        Humidity:
-                                        <span id="humidity">
-                                            25
-                                        </span>
-                                        %
-                                    </li>
-                                    <li>
-                                        Wind speed:
-                                        <span id="wind">
-                                            5
-                                        </span>
-                                        km/h
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="row">
+                        <div class="forecast-day">
+                            Mon
+                            <br />
+                            <img src="images/clear.png">
+                            23°8°
+                        </div>
+                        <div class="forecast-day">
+                            Tue
+                            <br />
+                            <img src="images/scattered showers.png">
+                            22°9°
+                        </div>
+                        <div class="forecast-day">
+                            Wed
+                            <br />
+                            <img src="images/partly cloudy.png">
+                            21°20°
+                        </div>
+                        <div class="forecast-day">
+                            Thur
+                            <br />
+                            <img src="images/clear.png">
+                            21°30°
+                        </div>
+                        <div class="forecast-day">
+                            Fri
+                            <br />
+                            <img src="images/partly cloudy.png">
+                            24°8°
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="forecast-day">
-                                Mon
-                                <br />
-                                <img src="images/clear.png">
-                                23°8°
-                            </div>
-                            <div class="forecast-day">
-                                Tue
-                                <br />
-                                <img src="images/scattered showers.png">
-                                22°9°
-                            </div>
-                            <div class="forecast-day">
-                                Wed
-                                <br />
-                                <img src="images/partly cloudy.png">
-                                21°20°
-                            </div>
-                            <div class="forecast-day">
-                                Thur
-                                <br />
-                                <img src="images/clear.png">
-                                21°30°
-                            </div>
-                            <div class="forecast-day">
-                                Fri
-                                <br />
-                                <img src="images/partly cloudy.png">
-                                24°8°
-                            </div>
-                        </div>
-                        <small>
-                            <a href="https://">
-                        </small>
-                    </div>
+                    <small>
+                        <a href="https://">
+                    </small>
+                </div>
 
-                    <script src="src/index.js" type="module"></script>
+                <script src="src/index.js" type="module"></script>
 </body>
 
 </html>
